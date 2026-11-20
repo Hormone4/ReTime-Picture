@@ -1,6 +1,6 @@
 # ReTime-Picture
 
-CLI to modify the date of pictures (EXIF metadata + NTFS timestamps).
+CLI to modify the date of pictures (EXIF metadata + NTFS timestamps).<br/>
 Accepted formats:
 
 * jpeg
