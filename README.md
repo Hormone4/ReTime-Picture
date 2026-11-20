@@ -2,13 +2,11 @@
 
 CLI to modify the date of pictures (EXIF metadata + NTFS timestamps).
 
-Especially designed to get back lost date metadata from pictures taken with Android / iOS phones.
-
 ## Description
 
 This software allows to:
 
-- Automatically detect the picture's date from the filename (manual mode is also an option).
+- Automatically detect your picture's dates from their filename (manual mode is also an option).
 - Update all relevant EXIF date fields.
 - Set the Windows creation and modification timestamps (NTFS).
 - Skip images once both metadata and file timestamps match.
@@ -19,19 +17,16 @@ This software allows to:
 
 If your filename formats are among the following (Android / iOS standard):
 
-```
-IMG_YYYYMMDD_hhmmss.jpg
-YYYY-MM-DD hh.mm.ss.jpeg
-```
+* IMG_YYYYMMDD_hhmmss.jpg
+* YYYY-MM-DD hh.mm.ss.jpeg
 
 For example:
 
-```
-IMG_20250717_220715.jpg
-2025-07-21 11.14.55.jpeg
-```
+* IMG_20250717_220715.jpg
+* 2025-07-21 11.14.55.jpeg
 
-Run it directly from the folder:
+
+Run `retime.py` directly in your folder:
 
 ```bash
 python retime.py
@@ -43,13 +38,13 @@ Or specify another folder:
 python retime.py "C:\path\to\pictures"
 ```
 
-`retime.py` will detect the filenames, extract the correct dates and update your pictures.
-
+The script will automatically detect the filenames, extract the correct dates and update your pictures.
+<br/>
 
 
 ### Custom mode (to modify pictures individually)
 
-If you just wish to change the date of a picture, run `retime.py` with individual picture date updates.
+Run `retime.py` with individual picture date updates.
 
 Examples:
 
@@ -63,8 +58,3 @@ You can update several pictures with the same date:
 ```bash
 python retime.py -f "photo1.jpg" -f "photo2.jpg" -d "2025-07-21 11.14.55"
 ```
-
-Both EXIF metadata and Windows file timestamps are updated.
-
-
-
