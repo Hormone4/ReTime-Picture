@@ -44,7 +44,7 @@ python retime.py "C:\path\to\pictures"
 ```
 
 The script will automatically detect the filenames, extract the correct dates and update your pictures.
-<br/>
+<br/><br/><br/>
 
 
 ### Custom mode (to modify pictures individually)
